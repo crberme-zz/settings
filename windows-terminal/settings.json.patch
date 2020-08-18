@@ -1,0 +1,36 @@
+7a8,17
+> 
+> // Settings added to this file:
+> //  - Enabled acrylic transparency. Almost opaque, but enought to be noticeable.
+> //  - Hidden Azure Cloud Shell profile.
+> //  - Added Git Bash profile. It uses the same font face and size as Mintty.
+> //    To avoid flicker while using bash, open %USERPROFILE%/.inputrc (create one if it doesn't exist)
+> //    and add the following: set bell-style none
+> //    (See https://github.com/microsoft/terminal/issues/7200#issue-674299990)
+> //  - Enabled dark theme
+> // For up to date versions of this file and more, see: https://github.com/crberme/settings
+30a41,42
+>             "useAcrylic": true,
+>             "acrylicOpacity": 1
+50c62
+<                 "hidden": false,
+---
+>                 "hidden": true,
+52a65,74
+>             },
+>             {
+>                 "guid": "{9173ae55-dbf3-4ca6-a2e4-49dedea4748b}",
+>                 "name": "Git Bash",
+>                 "hidden": false,
+>                 "commandline": "%PROGRAMFILES%/Git/bin/sh.exe",
+>                 "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
+>                 "fontFace": "Lucida Console",
+>                 "fontSize": 9,
+>                 "startingDirectory": "%USERDIR%"
+80c102,105
+<     ]
+---
+>     ],
+> 
+>     // Custom settings
+>     "theme": "dark"
